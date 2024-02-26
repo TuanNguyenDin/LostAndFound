@@ -95,7 +95,7 @@
         <servlet-name>YourPost</servlet-name>
         <url-pattern>/YourPost</url-pattern>
     </servlet-mapping>
-     <servlet>
+    <servlet>
         <servlet-name>ViewList_report</servlet-name>
         <servlet-class>fu.ex.Servlet.ViewList_report</servlet-class>
     </servlet>
@@ -108,4 +108,10 @@
             30
         </session-timeout>
     </session-config>
+    <resource-ref>
+        <res-ref-name>LnF</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
 </web-app>

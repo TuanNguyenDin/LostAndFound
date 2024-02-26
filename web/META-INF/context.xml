@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/LnF"/>
+<Context path="/LnF">
+    <Resource name="LnF" type="javax.sql.DataSource" auth="Container"
+              username="sa" password="1234"
+              driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+              url="jdbc:sqlserver://localhost:1433;databaseName=LnF"
+    />
+</Context>
